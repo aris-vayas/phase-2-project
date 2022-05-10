@@ -1,13 +1,9 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-//import SongCard from "./SongCard";
-// Import Swiper styles
 import "swiper/css";
-//import SongCard from "./SongCard";
 function Carousle({ songs }) {
   const SwiperCard = songs.map((item) => {
     return (
-      <SwiperSlide>
+      <SwiperSlide key={item.id}>
         <h1>{item.title}</h1>
         <div>
           <img
