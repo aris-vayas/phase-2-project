@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import React, { useEffect, useState } from "react";
+import Header from "./Header";
 
 function App() {
   const [song, setSong] = useState([]);
@@ -11,30 +11,20 @@ function App() {
   }, []);
   const songToPlay = song.map((item) => {
     return (
-      <>
-        <p>{item.title}</p>
-        <audio controls src={item.songlink}></audio>
-      </>
+      <div key={item.id}>
+        <h2> Artist: {item.creator}</h2>
+        <h3>Song: {item.title}</h3>
+        <img className="images" src={item.thumbnail} />
+        <audio className="audio" controls src={item.songlink}></audio>
+        <iframe src={item.video}></iframe>
+      </div>
     );
   });
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <div>{songToPlay}</div>
-      </header>
+      <Header />
+      {songToPlay}
     </div>
   );
 }
