@@ -1,0 +1,121 @@
+{
+  "music": [
+    {
+      "id": 1,
+      "title": "Poppin",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/02/4-143.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/02/Yeat_-_Poppin_Forbesloaded.com.mp3",
+      "creator": "yeat",
+      "genre": "Rap",
+      "video": "https://www.youtube.com/watch?v=bHDWrnlIqfQ"
+    },
+    {
+      "id": 2,
+      "title": "spotify Test",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/04/5-23.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/04/Yeat_-_Doubl__Forbesloaded.com.mp3",
+      "creator": "yeat",
+      "genre": "rap",
+      "video": ""
+    },
+    {
+      "id": 3,
+      "title": "Cmon",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2021/09/1-1160.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2021/09/Yeat_-_Cmon_Forbesloaded.com.mp3",
+      "creator": "Yeat",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 4,
+      "title": "Dub",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/01/1-79.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/01/Yeat_-_dub_Forbesloaded.com.mp3",
+      "creator": "",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 5,
+      "title": "Factz",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2021/09/1-1167.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2021/09/Yeat_-_Factz_Forbesloaded.com.mp3",
+      "creator": "Yeat",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 6,
+      "title": "Luh geek",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/04/5-21.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/04/Yeat_-_Luh_g_ek_Forbesloaded.com.mp3",
+      "creator": "Yeat",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 7,
+      "title": "Real Six",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/02/4-142.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/02/Yeat_-_Real_Six_Forbesloaded.com.mp3",
+      "creator": "",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 8,
+      "title": "Call me",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/02/4-40.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/02/Yeat_-_Call_m__Forbesloaded.com.mp3",
+      "creator": "",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 9,
+      "title": "On tha Line",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/04/5-24.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/04/Yeat_-_On_th_Line_Forbesloaded.com.mp3",
+      "creator": "",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 10,
+      "title": "Callin Me",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2021/09/11-2.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2021/09/Yeat_-_Callin_M__Forbesloaded.com.mp3",
+      "creator": "",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 11,
+      "title": "Bal on ",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2021/09/1-1169.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2021/09/Yeat_-_Bak_on_m_Forbesloaded.com.mp3",
+      "creator": "",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 12,
+      "title": "Nvr Again",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/02/4-141.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/02/Yeat_-_Nvr_Again_Forbesloaded.com.mp3",
+      "creator": "",
+      "genre": "",
+      "video": ""
+    },
+    {
+      "id": 13,
+      "title": "Kant Relax",
+      "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/04/4-186.jpg?w=640&ssl=1",
+      "songlink": "https://forbesloaded.com/wp-content/uploads/2022/04/Yeat_-_Kant_Relax_Forbesloaded.com.mp3",
+      "creator": "",
+      "genre": "",
+      "video": ""
+    }
+  ]
+}

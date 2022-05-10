@@ -1,8 +1,23 @@
 import logo from "./logo.svg";
 import "./App.css";
-//import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function App() {
+  const [song, setSong] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/music")
+      .then((r) => r.json())
+      .then((data) => setSong(data));
+  }, []);
+  const songToPlay = song.map((item) => {
+    return (
+      <>
+        <p>{item.title}</p>
+        <audio controls src={item.songlink}></audio>
+      </>
+    );
+  });
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,7 +33,7 @@ function App() {
         >
           Learn React
         </a>
-        <div>OURTUBE</div>
+        <div>{songToPlay}</div>
       </header>
     </div>
   );
