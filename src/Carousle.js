@@ -1,30 +1,34 @@
-// src/reusable/image-gallery.component.js
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-
-class ImageGallaryComponent extends React.Component {
-    render() {
-        return (
-            <div>
-                <h2>My Image Gallery</h2>
-                <Carousel autoPlay interval="5000" transitionTime="5000">
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=1" />
-                        <p className="legend">My Classic Still 1</p>
-                    </div>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=2" />
-                        <p className="legend">My Classic Still 2</p>
-                    </div>
-                    <div>
-                        <img src="https://picsum.photos/700/400?img=3" />
-                        <p className="legend">My Classic Still 3</p>
-                    </div>
-                </Carousel>
-            </div>
-        )
-    };
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+//import SongCard from "./SongCard";
+// Import Swiper styles
+import "swiper/css";
+//import SongCard from "./SongCard";
+function Carousle({ songs }) {
+  const SwiperCard = songs.map((item) => {
+    return (
+      <SwiperSlide>
+        <h1>{item.title}</h1>
+        <div>
+          <img
+            onClick={() => console.log("click")}
+            className={"images"}
+            src={item.thumbnail}
+          ></img>
+          <audio controls src={item.songlink}></audio>
+        </div>
+      </SwiperSlide>
+    );
+  });
+  return (
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log("slide change")}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      {SwiperCard}
+    </Swiper>
+  );
 }
-
-export default ImageGallaryComponent
+export default Carousle;
