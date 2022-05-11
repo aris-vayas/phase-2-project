@@ -1,4 +1,5 @@
 import "./App.css";
+import "./styles.css";
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Carousle from "./Carousle";
