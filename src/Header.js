@@ -11,7 +11,7 @@ import {
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { useState } from "react";
-const Header = () => {
+const Header = ({ setPage }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   return (
@@ -63,7 +63,7 @@ const Header = () => {
             <a
               onClick={(e) => {
                 e.preventDefault();
-                console.log(e.target.pathname);
+                setPage(e.target.pathname);
               }}
               href="/Music"
             >
@@ -77,7 +77,15 @@ const Header = () => {
               setAnchorEl(null);
             }}
           >
-            Videos
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                setPage(e.target.pathname);
+              }}
+              href="/Videos"
+            >
+              Videos
+            </a>
           </MenuItem>
         </Menu>
       </Toolbar>
