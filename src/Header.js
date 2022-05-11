@@ -54,8 +54,31 @@ const Header = () => {
           anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
           transformOrigin={{ vertical: "top", horizontal: "right" }}
         >
-          <MenuItem onClick={() => setAnchorEl(null)}>Music</MenuItem>
-          <MenuItem onClick={() => setAnchorEl(null)}>Videos</MenuItem>
+          <MenuItem
+            onClick={(e) => {
+              console.log(e.target.pathname);
+              setAnchorEl(null);
+            }}
+          >
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                console.log(e.target.pathname);
+              }}
+              href="/Music"
+            >
+              Music
+            </a>
+          </MenuItem>
+
+          <MenuItem
+            onClick={(e) => {
+              console.log(e.target);
+              setAnchorEl(null);
+            }}
+          >
+            Videos
+          </MenuItem>
         </Menu>
       </Toolbar>
     </AppBar>

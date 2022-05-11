@@ -2,20 +2,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-function Carousle({ songs }) {
+function Carousle({ songs, setSingleSong }) {
   const SwiperCard = songs.map((item) => {
     return (
       <SwiperSlide key={item.id}>
         <div>
-          <h1>{item.title}</h1>
+          <h1  onClick={(e) => console.log(e.target.value)}>
+            {item.title}
+          </h1>
         </div>
 
         <div>
-          <img
-            onClick={() => console.log("click")}
-            className={"images"}
-            src={item.thumbnail}
-          ></img>
+          <img className={"images"} src={item.thumbnail}></img>
           <audio controls src={item.songlink}></audio>
         </div>
       </SwiperSlide>
@@ -32,7 +30,7 @@ function Carousle({ songs }) {
         }}
         modules={[Mousewheel, Pagination]}
         className="mySwiper"
-        onSlideChange={() => console.log("slide change")}
+        onSlideChange={(e) => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
         {SwiperCard}
