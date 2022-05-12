@@ -4,6 +4,7 @@ import { SwiperSlide } from "swiper/react";
 import { Typography } from "@mui/material";
 import ReactPlayer from "react-player";
 import Carousle from "./Carousel";
+import Rating from "./Rating";
 const Videos = ({ songs, getMusic }) => {
   const VideoCard = songs.map((item) => {
     ////
@@ -11,7 +12,7 @@ const Videos = ({ songs, getMusic }) => {
       <SwiperSlide key={item.id}>
         <div>
           <ReactPlayer url={item.video} />
-          <br></br>
+          <Rating />
           <Typography variant="h2" align="center">
             "{item.title}" by {item.creator}
           </Typography>
@@ -31,7 +32,7 @@ const Videos = ({ songs, getMusic }) => {
       <br></br>
 
       <Carousle>{VideoCard}</Carousle>
-      <br></br>
+
       <Typography variant="h3" align="center">
         Submit A Video
       </Typography>

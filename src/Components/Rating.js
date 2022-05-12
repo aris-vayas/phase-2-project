@@ -5,7 +5,11 @@ import Typography from "@mui/material/Typography";
 
 export default function ChangeRating({}) {
   const [value, setValue] = React.useState(0);
+<<<<<<< HEAD
   //test
+=======
+
+>>>>>>> main
   return (
     <Box
       sx={{
@@ -20,7 +24,10 @@ export default function ChangeRating({}) {
           setValue(newValue);
         }}
       />
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
       {/* <Typography component="legend">Read only</Typography>
       <Rating name="read-only" value={value} readOnly />
       <Typography component="legend">Disabled</Typography>
