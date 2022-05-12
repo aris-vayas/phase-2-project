@@ -1,37 +1,42 @@
 import "./App.css";
 import "./styles.css";
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Carousle from "./Carousle";
-import VideoDetail from "./VideoDetail";
-import MusicDetail from "./MusicDetail";
-//import { Switch, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import About from "./Components/About";
+import Home from "./Components/Home";
+import Music from "./Components/Music";
+import Videos from "./Components/Videos";
+
 function App() {
   const [songs, setSong] = useState([]);
-  const [page, setPage] = useState("/");
 
-  useEffect(() => {
+  const getMusic = () => {
     fetch("http://localhost:3001/music")
       .then((r) => r.json())
       .then((data) => setSong(data));
+  };
+
+  useEffect(() => {
+    getMusic();
   }, []);
 
-  function getCurrentPage() {
-    switch (page) {
-      case "/":
-        return <Carousle songs={songs} />;
-      case "/Music":
-        return <MusicDetail songs={songs} />;
-      case "/Videos":
-        return <VideoDetail songs={songs} />;
-      default:
-        return <h1>404 not found</h1>;
-    }
-  }
   return (
-    <div>
-      <Header setPage={setPage} />
-      {getCurrentPage()}
+    <div className="App">
+      <Routes>
+        <Route
+          path="/"
+          element={<Home songs={songs} getMusic={getMusic} />}
+        ></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route
+          path="/music"
+          element={<Music songs={songs} getMusic={getMusic} />}
+        ></Route>
+        <Route
+          path="/videos"
+          element={<Videos songs={songs} getMusic={getMusic} />}
+        ></Route>
+      </Routes>
     </div>
   );
 }
