@@ -1,6 +1,6 @@
 import { Stack, TextField, Button } from "@mui/material";
 import { Formik, Form, Field } from "formik";
-
+import { object, string } from "yup";
 const SongSubmission = ({ getMusic }) => {
   const initalValue = {
     title: "",
@@ -10,7 +10,6 @@ const SongSubmission = ({ getMusic }) => {
     genre: "",
     video: "",
   };
-
   const handleFormikSubmit = (values, formikHelpers) => {
     fetch("http://localhost:3001/music", {
       method: "POST",
@@ -21,24 +20,38 @@ const SongSubmission = ({ getMusic }) => {
     }).then(() => getMusic());
     formikHelpers.resetForm();
   };
-
   return (
     <div className="form">
-      <Formik initialValues={initalValue} onSubmit={handleFormikSubmit}>
-        {() => (
+      <Formik
+        initialValues={initalValue}
+        onSubmit={handleFormikSubmit}
+        validationSchema={object({
+          title: string()
+            .required("Please enter song name")
+            .min(3, "Enter A Song Name"),
+          thumbnail: string().required("Please enter a image"),
+          songlink: string().required("Please enter a Mp3 Link"),
+          creator: string().required("Please enter artist name"),
+          video: string().required("Please enter a video link"),
+        })}
+      >
+        {({ errors, isValid, touched, dirty }) => (
           <Form>
             <Stack direction="column">
               <Field
-                component={TextField}
-                variant="filled"
-                label="Artist"
                 name="creator"
-                helperText="Enter Artist Name"
-                required
+                type="text"
+                component={TextField}
+                variant="outlined"
+                color="success"
+                label="Artist"
+                // fullWidth
+                error={Boolean(errors.creator) && Boolean(touched.creator)}
+                helperText={Boolean(touched.creator) && Boolean(errors.creator)}
               />
               <Field
                 component={TextField}
-                variant="filled"
+                variant="outlined"
                 label="Song"
                 name="title"
                 helperText="Enter Song Name"
@@ -46,7 +59,7 @@ const SongSubmission = ({ getMusic }) => {
               />
               <Field
                 component={TextField}
-                variant="filled"
+                variant="outlined"
                 label="Mp3"
                 name="songlink"
                 helperText="Enter Mp3 Link"
@@ -54,7 +67,7 @@ const SongSubmission = ({ getMusic }) => {
               />
               <Field
                 component={TextField}
-                variant="filled"
+                variant="outlined"
                 label="Video"
                 name="video"
                 helperText="Enter Video Link"
@@ -62,7 +75,7 @@ const SongSubmission = ({ getMusic }) => {
               />
               <Field
                 component={TextField}
-                variant="filled"
+                variant="outlined"
                 label="Image"
                 name="thumbnail"
                 helperText="Enter Image Link"
@@ -80,5 +93,4 @@ const SongSubmission = ({ getMusic }) => {
     </div>
   );
 };
-
 export default SongSubmission;
