@@ -20,10 +20,7 @@ export default function ChangeRating({}) {
           setValue(newValue);
         }}
       />
-<<<<<<< HEAD
 
-=======
->>>>>>> main
       {/* <Typography component="legend">Read only</Typography>
       <Rating name="read-only" value={value} readOnly />
       <Typography component="legend">Disabled</Typography>
