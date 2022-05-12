@@ -29,7 +29,7 @@ const Videos = ({ songs, getMusic }) => {
       <br></br>
       <br></br>
       <br></br>
-      <h2>can we add search?</h2>
+
       <Carousle>{VideoCard}</Carousle>
       <br></br>
       <Typography variant="h3" align="center">
