@@ -1,23 +1,23 @@
 import NavBar from "./NavBar";
 import SongSubmission from "./SongSubmission";
 import { SwiperSlide } from "swiper/react";
-import { Typography } from "@mui/material"
-import ReactPlayer from "react-player"
+import { Typography } from "@mui/material";
+import ReactPlayer from "react-player";
+import Carousle from "./Carousel";
 const Videos = ({ songs, getMusic }) => {
-  const SwiperCard = songs.map((item) => {
-
+  const VideoCard = songs.map((item) => {
+    ////
     return (
       <SwiperSlide key={item.id}>
         <div>
-
-            <ReactPlayer  url={item.video}/>
-
-          <Typography variant="h6" align="center">
+          <ReactPlayer url={item.video} />
+          <br></br>
+          <Typography variant="h2" align="center">
             "{item.title}" by {item.creator}
           </Typography>
-          {/* <audio controls src={item.songlink}></audio> */}
         </div>
       </SwiperSlide>
+      ////
     );
   });
   return (
@@ -29,8 +29,8 @@ const Videos = ({ songs, getMusic }) => {
       <br></br>
       <br></br>
       <br></br>
-      {SwiperCard}
-      <br></br>
+      <h2>can we add search?</h2>
+      <Carousle>{VideoCard}</Carousle>
       <br></br>
       <Typography variant="h3" align="center">
         Submit A Video
