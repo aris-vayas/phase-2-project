@@ -11,12 +11,12 @@
     },
     {
       "id": 2,
-      "title": "spotify Test",
+      "title": "Doubl",
       "thumbnail": "https://i0.wp.com/forbesloaded.com/wp-content/uploads/2022/04/5-23.jpg?w=640&ssl=1",
       "songlink": "https://forbesloaded.com/wp-content/uploads/2022/04/Yeat_-_Doubl__Forbesloaded.com.mp3",
       "creator": "yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=UWlGiFlVeus"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2021/09/Yeat_-_Cmon_Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=E_GmzW__MRA"
     },
     {
       "id": 4,
@@ -43,7 +43,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2021/09/Yeat_-_Factz_Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=I1hhFAByRvE"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2022/04/Yeat_-_Luh_g_ek_Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=I1hhFAByRvE"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2022/02/Yeat_-_Real_Six_Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=CH7WYHZF3Ho"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2022/02/Yeat_-_Call_m__Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=Cu9fcqHabYk"
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2022/04/Yeat_-_On_th_Line_Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=QfKBrsRBncI"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2021/09/Yeat_-_Callin_M__Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=Beuk-Y7fp34"
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2021/09/Yeat_-_Bak_on_m_Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=C2Iwrg51U8o"
     },
     {
       "id": 12,
@@ -106,7 +106,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2022/02/Yeat_-_Nvr_Again_Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=fnJZZ2pG7w8"
     },
     {
       "id": 13,
@@ -115,7 +115,7 @@
       "songlink": "https://forbesloaded.com/wp-content/uploads/2022/04/Yeat_-_Kant_Relax_Forbesloaded.com.mp3",
       "creator": "Yeat",
       "genre": "Rap",
-      "video": ""
+      "video": "https://www.youtube.com/watch?v=tuAqQ0_v2WU"
     },
     {
       "title": "",

@@ -1,25 +1,21 @@
 import NavBar from "./NavBar";
 import SongSubmission from "./SongSubmission";
 import { SwiperSlide } from "swiper/react";
-import { Typography } from "@mui/material";
+import { Typography } from "@mui/material"
+import ReactPlayer from "react-player"
 const Videos = ({ songs, getMusic }) => {
   const SwiperCard = songs.map((item) => {
-    if (item.thumbnail === "") {
-      return;
-    }
+
     return (
       <SwiperSlide key={item.id}>
         <div>
-          {item.thumbnail === "" ? (
-            <p>No Image</p>
-          ) : (
-            <img className={"images"} src={item.thumbnail}></img>
-          )}
+
+            <ReactPlayer  url={item.video}/>
 
           <Typography variant="h6" align="center">
             "{item.title}" by {item.creator}
           </Typography>
-          <audio controls src={item.songlink}></audio>
+          {/* <audio controls src={item.songlink}></audio> */}
         </div>
       </SwiperSlide>
     );
