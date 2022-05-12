@@ -5,11 +5,7 @@ import Typography from "@mui/material/Typography";
 
 export default function ChangeRating({}) {
   const [value, setValue] = React.useState(0);
-<<<<<<< HEAD
-  //test
-=======
 
->>>>>>> main
   return (
     <Box
       sx={{
